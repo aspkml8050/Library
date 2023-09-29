@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="frmnewarrival" targetNamespace="http://tempuri.org/frmnewarrival.xsd" xmlns:mstns="http://tempuri.org/frmnewarrival.xsd" xmlns="http://tempuri.org/frmnewarrival.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Newarrivals_ReportTableAdapter" GeneratorDataComponentClassName="Newarrivals_ReportTableAdapter" Name="Newarrivals_Report" UserDataComponentName="Newarrivals_ReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.Newarrivals_Report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     Newarrivals_Report.*
+FROM         Newarrivals_Report</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="accessionnumber" DataSetColumn="accessionnumber" />
+              <Mapping SourceColumn="callno" DataSetColumn="callno" />
+              <Mapping SourceColumn="catalogdate" DataSetColumn="catalogdate" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="Author" DataSetColumn="Author" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="publisher" DataSetColumn="publisher" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="frmnewarrival" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="frmnewarrival" msprop:Generator_DataSetName="frmnewarrival">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Newarrivals_Report" msprop:Generator_UserTableName="Newarrivals_Report" msprop:Generator_RowDeletedName="Newarrivals_ReportRowDeleted" msprop:Generator_RowChangedName="Newarrivals_ReportRowChanged" msprop:Generator_RowClassName="Newarrivals_ReportRow" msprop:Generator_RowChangingName="Newarrivals_ReportRowChanging" msprop:Generator_RowEvArgName="Newarrivals_ReportRowChangeEvent" msprop:Generator_RowEvHandlerName="Newarrivals_ReportRowChangeEventHandler" msprop:Generator_TableClassName="Newarrivals_ReportDataTable" msprop:Generator_TableVarName="tableNewarrivals_Report" msprop:Generator_RowDeletingName="Newarrivals_ReportRowDeleting" msprop:Generator_TablePropName="Newarrivals_Report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accessionnumber" msprop:Generator_UserColumnName="accessionnumber" msprop:Generator_ColumnVarNameInTable="columnaccessionnumber" msprop:Generator_ColumnPropNameInRow="accessionnumber" msprop:Generator_ColumnPropNameInTable="accessionnumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="callno" msdata:ReadOnly="true" msprop:Generator_UserColumnName="callno" msprop:Generator_ColumnVarNameInTable="columncallno" msprop:Generator_ColumnPropNameInRow="callno" msprop:Generator_ColumnPropNameInTable="callnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="38" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="catalogdate" msprop:Generator_UserColumnName="catalogdate" msprop:Generator_ColumnVarNameInTable="columncatalogdate" msprop:Generator_ColumnPropNameInRow="catalogdate" msprop:Generator_ColumnPropNameInTable="catalogdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="title" msdata:ReadOnly="true" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Author" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Author" msprop:Generator_ColumnVarNameInTable="columnAuthor" msprop:Generator_ColumnPropNameInRow="Author" msprop:Generator_ColumnPropNameInTable="AuthorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="institutename" msprop:Generator_UserColumnName="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_UserColumnName="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" msprop:Generator_UserColumnName="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" type="xs:decimal" />
+              <xs:element name="state" msprop:Generator_UserColumnName="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno" msprop:Generator_UserColumnName="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram" msprop:Generator_UserColumnName="gram" msprop:Generator_ColumnVarNameInTable="columngram" msprop:Generator_ColumnPropNameInRow="gram" msprop:Generator_ColumnPropNameInTable="gramColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="publisher" msdata:ReadOnly="true" msprop:Generator_UserColumnName="publisher" msprop:Generator_ColumnVarNameInTable="columnpublisher" msprop:Generator_ColumnPropNameInRow="publisher" msprop:Generator_ColumnPropNameInTable="publisherColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="137" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Newarrivals_Report" />
+      <xs:field xpath="mstns:accessionnumber" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IcardBack4_5" targetNamespace="http://tempuri.org/IcardBack4_5.xsd" xmlns:mstns="http://tempuri.org/IcardBack4_5.xsd" xmlns="http://tempuri.org/IcardBack4_5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IcardBack4_5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="IcardBack4_5" msprop:Generator_UserDSName="IcardBack4_5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Icard4_5back" msprop:Generator_TableClassName="Icard4_5backDataTable" msprop:Generator_TableVarName="tableIcard4_5back" msprop:Generator_TablePropName="Icard4_5back" msprop:Generator_RowDeletingName="Icard4_5backRowDeleting" msprop:Generator_RowChangingName="Icard4_5backRowChanging" msprop:Generator_RowEvHandlerName="Icard4_5backRowChangeEventHandler" msprop:Generator_RowDeletedName="Icard4_5backRowDeleted" msprop:Generator_UserTableName="Icard4_5back" msprop:Generator_RowChangedName="Icard4_5backRowChanged" msprop:Generator_RowEvArgName="Icard4_5backRowChangeEvent" msprop:Generator_RowClassName="Icard4_5backRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="proctoffno" msprop:Generator_ColumnVarNameInTable="columnproctoffno" msprop:Generator_ColumnPropNameInRow="proctoffno" msprop:Generator_ColumnPropNameInTable="proctoffnoColumn" msprop:Generator_UserColumnName="proctoffno" type="xs:string" minOccurs="0" />
+              <xs:element name="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn" msprop:Generator_UserColumnName="state" type="xs:string" minOccurs="0" />
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" type="xs:string" minOccurs="0" />
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city" type="xs:string" minOccurs="0" />
+              <xs:element name="phone1" msprop:Generator_ColumnVarNameInTable="columnphone1" msprop:Generator_ColumnPropNameInRow="phone1" msprop:Generator_ColumnPropNameInTable="phone1Column" msprop:Generator_UserColumnName="phone1" type="xs:string" minOccurs="0" />
+              <xs:element name="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" msprop:Generator_UserColumnName="pincode" type="xs:string" minOccurs="0" />
+              <xs:element name="peraddress" msprop:Generator_ColumnVarNameInTable="columnperaddress" msprop:Generator_ColumnPropNameInRow="peraddress" msprop:Generator_ColumnPropNameInTable="peraddressColumn" msprop:Generator_UserColumnName="peraddress" type="xs:string" minOccurs="0" />
+              <xs:element name="perstate" msprop:Generator_ColumnVarNameInTable="columnperstate" msprop:Generator_ColumnPropNameInRow="perstate" msprop:Generator_ColumnPropNameInTable="perstateColumn" msprop:Generator_UserColumnName="perstate" type="xs:string" minOccurs="0" />
+              <xs:element name="percity" msprop:Generator_ColumnVarNameInTable="columnpercity" msprop:Generator_ColumnPropNameInRow="percity" msprop:Generator_ColumnPropNameInTable="percityColumn" msprop:Generator_UserColumnName="percity" type="xs:string" minOccurs="0" />
+              <xs:element name="userid" msprop:Generator_ColumnVarNameInTable="columnuserid" msprop:Generator_ColumnPropNameInRow="userid" msprop:Generator_ColumnPropNameInTable="useridColumn" msprop:Generator_UserColumnName="userid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

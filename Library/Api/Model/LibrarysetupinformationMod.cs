@@ -1,0 +1,173 @@
+﻿using System;
+namespace LibData.Model
+{
+    public class LibrarysetupinformationMod
+    {
+        //public int? Id { get; set; } later
+        public string  institutename { get; set; }
+        public string  libraryname { get; set; }
+        public string  address { get; set; }
+        public string  city { get; set; }
+
+        public decimal? pincode { get; set; }
+        
+        public string  state { get; set; }
+        public string  phoneno { get; set; }
+        public string  fax { get; set; }
+        public string  email { get; set; }
+        public string  gram { get; set; }
+        public string  currency { get; set; }
+        public string  shortname { get; set; }
+        public int? reminderValidityPeriod { get; set; }
+        public string  CurrentAcademicSession { get; set; }
+        public string  CurrencyConversionFactor { get; set; }
+        public string  databasesource { get; set; }
+        public string  smptp_IPadd { get; set; }
+public decimal? discount { get; set; }
+public int? OrderArrivalGap { get; set; }
+public string  isBackDateAllowed { get; set; }
+public string  isAuditRequired { get; set; }
+public string  isEmailAllowed { get; set; }
+public int? CutterNoLength { get; set; }
+public int? MaxResPerCopy { get; set; }
+public int? Jurl_RemainderPeriod { get; set; }
+public string  IPAddress_1 { get; set; }
+public string  IPAddress_2 { get; set; }
+public string  proxyAdd { get; set; }
+public string  iUser { get; set; }
+public string  iPwd { get; set; }
+public int? category_id { get; set; }
+public int? media_id { get; set; }
+public int? language_id { get; set; }
+public string  def_language { get; set; }
+public string  media { get; set; }
+public string  category { get; set; }
+public string  DBBLocation1 { get; set; }
+public string  DBBLocation2 { get; set; }
+public string  DBBLocation3 { get; set; }
+public string  dbservername { get; set; }
+public string  dbuserid { get; set; }
+public string  dbpassword { get; set; }
+public string  Menu { get; set; }
+public int? departmentcode { get; set; }
+public string  def_city { get; set; }
+public string  def_state { get; set; }
+public string  def_country { get; set; }
+public string  dis_newarr { get; set; }
+public string  circPassword { get; set; }
+public string  checkBudget { get; set; }
+public byte[] college_picture { get; set; }
+public int? theme { get; set; }
+public string  downloadpwd { get; set; }
+public int? StopIssueRetirement { get; set; }
+public decimal? BBSecurity { get; set; }
+public decimal? BBRent { get; set; }
+public string  CD_RomPath { get; set; }
+
+public int? emProOrd { get; set; }
+public int? emCanOrd { get; set; }
+public int? emOrdRemLet { get; set; }
+public int? emOrdConLet { get; set; }
+public int? emRemLetPriPro { get; set; }
+public int? emTran { get; set; }
+public int? emIsu { get; set; }
+public int? emReIsu { get; set; }
+public int? emRet { get; set; }
+public int? emIsuTU { get; set; }
+public int? emRetTU { get; set; }
+public int? emIsuBakLog { get; set; }
+public int? emRetBakLog { get; set; }
+public int? emIsuSpe { get; set; }
+public int? emIsuTecUnp { get; set; }
+public int? emRetTecUnp { get; set; }
+public int? emODCRecEnt { get; set; }
+public int? emODCIntRecEnt { get; set; }
+public int? emODCWavOff { get; set; }
+public int? emODCDetMem { get; set; }
+public int? emOrdJou { get; set; }
+public int? emOrdPack { get; set; }
+public int? emJouPay { get; set; }
+public int? emJouClaim { get; set; }
+public string  OnlineP { get; set; }
+public string  OrgSName { get; set; }
+public string  msgOPAC { get; set; }
+public string  OnlinePIndent { get; set; }
+public string  Dept_B_Cat { get; set; }
+public string  Jornal_Bind_All { get; set; }
+public string  Binding_Must { get; set; }
+public string  DigitalDocPath { get; set; }
+public string  WithoutOIP { get; set; }
+public string  WebSite { get; set; }
+public string  IsLMenuSlider { get; set; }
+public byte[] DescImage { get; set; }
+public string  PrimaryDescType { get; set; }
+public int? smtp_Port { get; set; }
+public int? BookReturnDate_Msg { get; set; }
+public int? OverDue_Msg { get; set; }
+public string  DBookBind { get; set; }
+public string  msgPopUp { get; set; }
+public DateTime? schedule_performed_upto { get; set; }
+
+public int? SendMailAttempt { get; set; }
+public byte[] Organization_Picture { get; set; }
+public string  reminder_email { get; set; }
+public string  EnableBiometric { get; set; }
+public string  EnableAutoPassword { get; set; }
+public string  EnableDualBiometric { get; set; }
+public int? EAttLoc { get; set; }
+public string  indent_comb_prnt { get; set; }
+public int? bookreturn_reminder { get; set; }
+public string  usersdataband { get; set; }
+public string  Enble_FregImm { get; set; }
+public string  Multi_Issue { get; set; }
+public long? addPublisher { get; set; }
+public long? addResources { get; set; }
+public string  jrnl_reminder_mobno { get; set; }
+public string  CallNo { get; set; }
+public string  CpyInform { get; set; }
+public string  Reserve { get; set; }
+public string  Content { get; set; }
+public string  AddKey { get; set; }
+public string  AddCart { get; set; }
+public string  AuthorIfo { get; set; }
+public string  BookInfo { get; set; }
+public string  Billno { get; set; }
+public string  Billdate { get; set; }
+public string  classno { get; set; }
+public string  bookno { get; set; }
+public string  volume { get; set; }
+public string  Part { get; set; }
+public string  Edition { get; set; }
+public string  EditionYear { get; set; }
+public string  PubYear { get; set; }
+public string  ISBN { get; set; }
+public string  ISSN { get; set; }
+public string  TotalPage { get; set; }
+public string  MediaP { get; set; }
+public string  Form { get; set; }
+public string  Location { get; set; }
+public string  lbmem { get; set; }
+public string  lbbook { get; set; }
+public string  lblLocation { get; set; }
+
+public string  MSSPLSuggestion { get; set; }
+public string  SearchButton { get; set; }
+public string  RefreshLocation { get; set; }
+public string  LibTraining { get; set; }
+public string  TrainingPath { get; set; }
+public string  EPCEnable { get; set; }
+public string  SetOfVol { get; set; }
+public string  VendorPercentage { get; set; }
+public string  BtnOk { get; set; }
+public string  BtnIncorrect { get; set; }
+public string  ant1 { get; set; }
+public string  ant4 { get; set; }
+public string  ant2 { get; set; }
+public string  ant3 { get; set; }
+public string  EArticlePath { get; set; }
+public string  EProjectPath { get; set; }
+public string  EThesisPath { get; set; }
+public string  EJournalPath { get; set; }
+
+    }
+}

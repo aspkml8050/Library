@@ -1,0 +1,25 @@
+﻿Think of libraries
+https://codeseven.github.io/toastr/demo.html
+
+
+***kamal
+direct accessning ok,
+tested for single manual accn 
+used in Catalog Data entry
+
+
+****
+Catalog Data entry, done for above , cataloging is done,
+further to work on when already cataloged data comes in page load.
+
+****kamal
+accession item register tested upto some extent on server
+sep
+****kamal
+directory Database
+StartDBCreateAlterObjects is stored procedure which contains all objects to create during startup.
+script of this file should be as text as script in c# class to create stored procedure and then run it
+
+
+
+

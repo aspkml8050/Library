@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BudgetDataSet" targetNamespace="http://tempuri.org/BudgetDataSet.xsd" xmlns:mstns="http://tempuri.org/BudgetDataSet.xsd" xmlns="http://tempuri.org/BudgetDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibraryConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryConnectionString (Default.aspx.vb)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BudgetView_RTableAdapter" GeneratorDataComponentClassName="BudgetView_RTableAdapter" Name="BudgetView_R" UserDataComponentName="BudgetView_RTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.BudgetView_R" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     allocatedamount, expendedamount, approvalcommitedamt, nonapprovalcommitedamt, approvalindentinhandamt, nonapprovalindentinhandamt, status, 
+                      institutename, libraryname, address, city, pincode, state, phoneno, fax, email, gram, departmentcode, Curr_Session, deptname, currency, balance, 
+                      spentamount
+FROM         BudgetView_R</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="allocatedamount" DataSetColumn="allocatedamount" />
+              <Mapping SourceColumn="expendedamount" DataSetColumn="expendedamount" />
+              <Mapping SourceColumn="approvalcommitedamt" DataSetColumn="approvalcommitedamt" />
+              <Mapping SourceColumn="nonapprovalcommitedamt" DataSetColumn="nonapprovalcommitedamt" />
+              <Mapping SourceColumn="approvalindentinhandamt" DataSetColumn="approvalindentinhandamt" />
+              <Mapping SourceColumn="nonapprovalindentinhandamt" DataSetColumn="nonapprovalindentinhandamt" />
+              <Mapping SourceColumn="status" DataSetColumn="ItemCategory" />
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="departmentcode" DataSetColumn="departmentcode" />
+              <Mapping SourceColumn="Curr_Session" DataSetColumn="Curr_Session" />
+              <Mapping SourceColumn="deptname" DataSetColumn="deptname" />
+              <Mapping SourceColumn="currency" DataSetColumn="currency" />
+              <Mapping SourceColumn="balance" DataSetColumn="balance" />
+              <Mapping SourceColumn="spentamount" DataSetColumn="spentamount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BudgetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="BudgetDataSet" msprop:Generator_UserDSName="BudgetDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BudgetView_R" msprop:Generator_UserTableName="BudgetView_R" msprop:Generator_RowEvArgName="BudgetView_RRowChangeEvent" msprop:Generator_TableVarName="tableBudgetView_R" msprop:Generator_TablePropName="BudgetView_R" msprop:Generator_RowDeletingName="BudgetView_RRowDeleting" msprop:Generator_RowChangingName="BudgetView_RRowChanging" msprop:Generator_RowDeletedName="BudgetView_RRowDeleted" msprop:Generator_RowEvHandlerName="BudgetView_RRowChangeEventHandler" msprop:Generator_TableClassName="BudgetView_RDataTable" msprop:Generator_RowChangedName="BudgetView_RRowChanged" msprop:Generator_RowClassName="BudgetView_RRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="allocatedamount" msprop:Generator_ColumnVarNameInTable="columnallocatedamount" msprop:Generator_ColumnPropNameInRow="allocatedamount" msprop:Generator_ColumnPropNameInTable="allocatedamountColumn" msprop:Generator_UserColumnName="allocatedamount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="expendedamount" msprop:Generator_ColumnVarNameInTable="columnexpendedamount" msprop:Generator_ColumnPropNameInRow="expendedamount" msprop:Generator_ColumnPropNameInTable="expendedamountColumn" msprop:Generator_UserColumnName="expendedamount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="approvalcommitedamt" msprop:Generator_ColumnVarNameInTable="columnapprovalcommitedamt" msprop:Generator_ColumnPropNameInRow="approvalcommitedamt" msprop:Generator_ColumnPropNameInTable="approvalcommitedamtColumn" msprop:Generator_UserColumnName="approvalcommitedamt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nonapprovalcommitedamt" msprop:Generator_ColumnVarNameInTable="columnnonapprovalcommitedamt" msprop:Generator_ColumnPropNameInRow="nonapprovalcommitedamt" msprop:Generator_ColumnPropNameInTable="nonapprovalcommitedamtColumn" msprop:Generator_UserColumnName="nonapprovalcommitedamt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="approvalindentinhandamt" msprop:Generator_ColumnVarNameInTable="columnapprovalindentinhandamt" msprop:Generator_ColumnPropNameInRow="approvalindentinhandamt" msprop:Generator_ColumnPropNameInTable="approvalindentinhandamtColumn" msprop:Generator_UserColumnName="approvalindentinhandamt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nonapprovalindentinhandamt" msprop:Generator_ColumnVarNameInTable="columnnonapprovalindentinhandamt" msprop:Generator_ColumnPropNameInRow="nonapprovalindentinhandamt" msprop:Generator_ColumnPropNameInTable="nonapprovalindentinhandamtColumn" msprop:Generator_UserColumnName="nonapprovalindentinhandamt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemCategory" msprop:Generator_ColumnVarNameInTable="columnItemCategory" msprop:Generator_ColumnPropNameInRow="ItemCategory" msprop:Generator_ColumnPropNameInTable="ItemCategoryColumn" msprop:Generator_UserColumnName="ItemCategory" type="xs:short" minOccurs="0" />
+              <xs:element name="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn" msprop:Generator_UserColumnName="institutename">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn" msprop:Generator_UserColumnName="libraryname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" msprop:Generator_UserColumnName="pincode" type="xs:decimal" />
+              <xs:element name="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn" msprop:Generator_UserColumnName="state">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn" msprop:Generator_UserColumnName="phoneno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn" msprop:Generator_UserColumnName="fax">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram" msprop:Generator_ColumnVarNameInTable="columngram" msprop:Generator_ColumnPropNameInRow="gram" msprop:Generator_ColumnPropNameInTable="gramColumn" msprop:Generator_UserColumnName="gram">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departmentcode" msprop:Generator_ColumnVarNameInTable="columndepartmentcode" msprop:Generator_ColumnPropNameInRow="departmentcode" msprop:Generator_ColumnPropNameInTable="departmentcodeColumn" msprop:Generator_UserColumnName="departmentcode" type="xs:int" />
+              <xs:element name="Curr_Session" msprop:Generator_ColumnVarNameInTable="columnCurr_Session" msprop:Generator_ColumnPropNameInRow="Curr_Session" msprop:Generator_ColumnPropNameInTable="Curr_SessionColumn" msprop:Generator_UserColumnName="Curr_Session" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deptname" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndeptname" msprop:Generator_ColumnPropNameInRow="deptname" msprop:Generator_ColumnPropNameInTable="deptnameColumn" msprop:Generator_UserColumnName="deptname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="currency" msprop:Generator_ColumnVarNameInTable="columncurrency" msprop:Generator_ColumnPropNameInRow="currency" msprop:Generator_ColumnPropNameInTable="currencyColumn" msprop:Generator_UserColumnName="currency">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnbalance" msprop:Generator_ColumnPropNameInRow="balance" msprop:Generator_ColumnPropNameInTable="balanceColumn" msprop:Generator_UserColumnName="balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="spentamount" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnspentamount" msprop:Generator_ColumnPropNameInRow="spentamount" msprop:Generator_ColumnPropNameInTable="spentamountColumn" msprop:Generator_UserColumnName="spentamount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BudgetView_R" />
+      <xs:field xpath="mstns:departmentcode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

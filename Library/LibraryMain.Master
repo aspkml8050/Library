@@ -1,0 +1,262 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LibraryMain.Master.cs" Inherits="Library.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+         <link href="cssDesign/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="cssDesign/Dropdown.css" rel="stylesheet" />
+    <link href="cssDesign/HeadeFooter.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+         <link href="cssDesign/jquery-ui.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="lib/popper.js/umd/popper.js"></script>
+<script src="Scripts/bootstrap.bundle.js"></script>
+    <link href="cssDesign/Menu/MenuClass.css" rel="stylesheet" />
+    <link href="lib/metisMenu/metisMenu.css" rel="stylesheet" />
+    <script src="lib/metisMenu/metisMenu.js"></script>
+    <script type="text/javascript" src="Scripts/Datatables/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="Content/Datatables/css/jquery.dataTables.css" />
+      <script type="text/javascript" src="JavaScript/MyFunction2.js"></script>
+      <script type="text/javascript" src="JavaScript/MenuBind.js"></script>
+      <script type="text/javascript" src="FormScripts/BookCatalogApi.js"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            PgLoaded();
+        })
+
+        function PgLoaded() {
+
+        }
+        function sineout() {
+//            $('[id$=btnsignout]').click();
+
+            __doPostBack('btno_Click', 'logout');
+            return false;
+        }
+
+  
+        function showhp() {
+            window.location.href = "HomePage.aspx";
+            $('#spSelTitle').text('');
+            return false;
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            return;
+        }
+        function closLogged() {
+            $('#myDropdown').removeClass('show');
+            return false;
+        }
+    </script>
+    <style>
+        .parent{
+            line-height:50px;
+            vertical-align:middle;
+            background-color:lightgoldenrodyellow;
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  padding:0;
+}
+
+.child{
+  flex:0 0 20%;
+    text-align:center;
+}
+
+.child.middle{
+    text-align:center;
+  flex-basis: 60%;
+}
+        .hdMaster{
+display:flex; flex-direction:row;width:100%;
+ align-content:stretch;
+        }
+        .hdMaster > div{
+            flex:1;
+            border:1px solid grey;
+        }
+    </style>
+    <style>
+        .SuggPages {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: inherit;
+    color: windowtext;
+    border:1px solid grey;
+    cursor:  pointer;
+    overflow: auto;
+     max-height:230px;
+    text-align: left;
+    width:250px !important;
+    list-style-type: none;
+}
+          #grdvispgs tbody tr td a{
+              text-decoration:none;
+              color:#5e5353;
+          }
+          #grdvispgs tbody tr td a:hover{
+              color:darkblue;
+          }
+
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server"  AsyncPostBackTimeout="6000" EnablePageMethods="true">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        
+        <div class="dvM">
+
+            <div class="dv1">
+                <div class="parent">
+                    <div class="child">
+                        <img src="Images/html.jpg" alt="logo" id="mpagelogo" onclick="return showhp();" width="80" />
+      <i style="z-index:100;">  <svg xmlns="http://www.w3.org/2000/svg"  width="25" id="svgOpclose"  height="25" style="color:darkblue;margin-left:25px; margin-right:45px; " fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+   </i> 
+                    </div>
+                    <div class="child middle">
+                        <div>
+                       <h3> Msspl ... progress</h3>
+
+                        </div>
+                        <span id="spSelTitle" style="font-weight:bold;"></span>
+                    </div>
+                    <div class="child">
+                      <asp:Button ID="btnsignout" runat="server" style="display:none" OnClick="btno_Click" />
+                        <asp:TextBox ID="txMpSearch" runat="server" Height="30" Width="150"></asp:TextBox>
+                       <asp:HiddenField ID="hdUser" runat="server" />
+<div class="dropbtnus">
+  <button onclick="return myFunction()" style="border:none; background-color:inherit; font-size:20px;" type="button" class="bi bi-person"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home"><span id="spUser"></span></a>
+    <a href="#about">About</a>
+    <a onclick="return openMainLib();" href="#">Main Library Catalog Search</a>
+    <a href="#" onclick="sineout()" style="font-size:18px;" class="bi bi-box-arrow-in-right"><span style="margin:0px 6px;"> Log Out</span></a>
+      <a href="#" onclick="return  closLogged()"  style="font-size:18px;"  class="bi bi-x-circle" ></a>
+  </div>
+</div>                        <ajax:AutoCompleteExtender ID="autoPageSearchExtender" runat="server" 
+      TargetControlID="txMpSearch"
+      MinimumPrefixLength="0"
+      CompletionInterval="50"
+      CompletionSetCount="50"
+      FirstRowSelected="true"
+                             OnClientItemSelected="getAutoPageSearchExtender"
+                             CompletionListCssClass="SuggPages"
+      EnableCaching="true"
+      UseContextKey="false"
+      ServicePath="MssplSugg.asmx"
+      ServiceMethod="GetSuggestionstop_Ajax">
+ </ajax:AutoCompleteExtender>
+                    </div>
+                </div>
+</div>
+ <div class="dv2">
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+ </div>
+            <asp:HiddenField ID="hdfirst" runat="server" />
+<aside class="sidebar sidebar-close">
+  <nav id="navmn" class="sidebar-nav">
+
+  </nav>
+</aside>
+
+
+
+
+            <div class="LayWidCont" id="divhig" style="margin-bottom:10px;">  </div>
+<div class="dv3">
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Maintained By Msspl</p>
+            </footer>
+        </div>
+            </div>
+        <p style="position:fixed;bottom:65px; right:18px;"  onmouseover="openVisited();" >Visited...</p>
+        <div id="dvVisited" style="display:none; position:absolute; overflow:auto; right:15px; margin:6px 3px; border:1px solid grey; height:250px; width:350px; bottom:100px;">
+            <asp:GridView ID="grdvispgs" runat="server" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:LinkButton ID="lnkpgs" runat="server" Width="100%" OnClick="lnkpgs_Click" Text='<%# Eval("title") %>'></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:HiddenField ID="hdlink"  runat="server"  Value='<%# Eval("link") %>' />
+                            <asp:HiddenField ID="hdpgid"  runat="server"  Value='<%# Eval("pgid") %>' />
+                            <asp:Label ID="labpgs" style="font-size:12px; " Width="115" runat="server" Text='<%# string.Format("{0:dd-MMM hh:mm:ss tt}", Convert.ToDateTime( Eval("ondate"))) %>' ></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+        </div>
+        <script type="text/javascript">
+            try {
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+
+            } catch (mastErr) {
+                console.log('MasterError:' + mastErr);
+            }
+            function EndRequestHandler(sender, args) {
+                if (args.get_error() != undefined) {
+                    //            args.set_errorHandled(true);
+                    MasterMesg(args.get_error().message, 3);
+                    return false;
+                }
+            }
+
+            function MasterpageMessage(messg, msglevel = 1) {
+                MasterMesg(messg, msglevel);
+                return false;
+            }
+
+
+        </script>
+        <div id="dvMainLibraryApi" class="hideApi">
+            <div id="dvhtml">
+
+            </div>
+        </div>
+    </form>
+<%--    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>--%>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_PubJournal" targetNamespace="http://tempuri.org/DataSet_PubJournal.xsd" xmlns:mstns="http://tempuri.org/DataSet_PubJournal.xsd" xmlns="http://tempuri.org/DataSet_PubJournal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_PubJournal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_PubJournal" msprop:Generator_DataSetName="DataSet_PubJournal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Pub_journal" msprop:Generator_UserTableName="Pub_journal" msprop:Generator_RowDeletedName="Pub_journalRowDeleted" msprop:Generator_TableClassName="Pub_journalDataTable" msprop:Generator_RowChangedName="Pub_journalRowChanged" msprop:Generator_RowClassName="Pub_journalRow" msprop:Generator_RowChangingName="Pub_journalRowChanging" msprop:Generator_RowEvArgName="Pub_journalRowChangeEvent" msprop:Generator_RowEvHandlerName="Pub_journalRowChangeEventHandler" msprop:Generator_TablePropName="Pub_journal" msprop:Generator_TableVarName="tablePub_journal" msprop:Generator_RowDeletingName="Pub_journalRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departmentname" msprop:Generator_UserColumnName="departmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="publisher" msprop:Generator_UserColumnName="publisher" msprop:Generator_ColumnPropNameInRow="publisher" msprop:Generator_ColumnVarNameInTable="columnpublisher" msprop:Generator_ColumnPropNameInTable="publisherColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn3" msprop:Generator_UserColumnName="DataColumn3" msprop:Generator_ColumnPropNameInRow="DataColumn3" msprop:Generator_ColumnVarNameInTable="columnDataColumn3" msprop:Generator_ColumnPropNameInTable="DataColumn3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="journal_no" msprop:Generator_UserColumnName="journal_no" msprop:Generator_ColumnPropNameInRow="journal_no" msprop:Generator_ColumnVarNameInTable="columnjournal_no" msprop:Generator_ColumnPropNameInTable="journal_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="unique_jn" msprop:Generator_UserColumnName="unique_jn" msprop:Generator_ColumnPropNameInRow="unique_jn" msprop:Generator_ColumnVarNameInTable="columnunique_jn" msprop:Generator_ColumnPropNameInTable="unique_jnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="journal_title" msprop:Generator_UserColumnName="journal_title" msprop:Generator_ColumnPropNameInRow="journal_title" msprop:Generator_ColumnVarNameInTable="columnjournal_title" msprop:Generator_ColumnPropNameInTable="journal_titleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="start_date" msprop:Generator_UserColumnName="start_date" msprop:Generator_ColumnPropNameInRow="start_date" msprop:Generator_ColumnVarNameInTable="columnstart_date" msprop:Generator_ColumnPropNameInTable="start_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="expiry_date" msprop:Generator_UserColumnName="expiry_date" msprop:Generator_ColumnPropNameInRow="expiry_date" msprop:Generator_ColumnVarNameInTable="columnexpiry_date" msprop:Generator_ColumnPropNameInTable="expiry_dateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,21 @@
+QAuery and api
+cdm.CommandText = "SELECT allocatedamount,approvalcommitedamt+nonapprovalcommitedamt AS amt FROM budgetmaster WHERE departmentcode=" & Val(grddetail.Items(kk).Cells(5).Text) & " and curr_session=N'" & Session("session") & "'"
+url= IndentAllotAmt (DeptSession )
+
+
+insert_ordermaster_1
+/api/Order/InsertOrder 
+
+same as giftindent-see api
+
+insert_OrderMasterAudit_1 NOT DONE, DEVS WILL DO
+
+UpdateExchRateCmd
+api/indent/UpdateExchangeRate
+for 3 updates update below
+update indentmaster set ApplicableExchangeRate=" & grddetail.Items(i).Cells(10).Text & " ,orderexchangerate=" & grddetail.Items(i).Cells(10).Text & " where indentid=N'" & grddetail.Items(i).Cells(14).Text & "'
+update indentmaster set order_check_code='1' where indentid =N'$1'
+update indentmaster set status=N'ordered' where indentid=N'" & grddetail.Items(i).Cells(14).Text & "'
+
+
+update giftindentmaster set order_check_code='1' where giftindentid =N'$1'

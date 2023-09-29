@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BudgetAllocationJournal" targetNamespace="http://tempuri.org/BudgetAllocationJournal.xsd" xmlns:mstns="http://tempuri.org/BudgetAllocationJournal.xsd" xmlns="http://tempuri.org/BudgetAllocationJournal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BudgetAllocationJournal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="BudgetAllocationJournal" msprop:Generator_UserDSName="BudgetAllocationJournal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ccp" msprop:Generator_TableClassName="ccpDataTable" msprop:Generator_TableVarName="tableccp" msprop:Generator_RowChangedName="ccpRowChanged" msprop:Generator_TablePropName="ccp" msprop:Generator_RowDeletingName="ccpRowDeleting" msprop:Generator_RowChangingName="ccpRowChanging" msprop:Generator_RowEvHandlerName="ccpRowChangeEventHandler" msprop:Generator_RowDeletedName="ccpRowDeleted" msprop:Generator_RowClassName="ccpRow" msprop:Generator_UserTableName="ccp" msprop:Generator_RowEvArgName="ccpRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Allocated_amount" msprop:Generator_ColumnVarNameInTable="columnAllocated_amount" msprop:Generator_ColumnPropNameInRow="Allocated_amount" msprop:Generator_ColumnPropNameInTable="Allocated_amountColumn" msprop:Generator_UserColumnName="Allocated_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="Expended_amount" msprop:Generator_ColumnVarNameInTable="columnExpended_amount" msprop:Generator_ColumnPropNameInRow="Expended_amount" msprop:Generator_ColumnPropNameInTable="Expended_amountColumn" msprop:Generator_UserColumnName="Expended_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="committed_amount" msprop:Generator_ColumnVarNameInTable="columncommitted_amount" msprop:Generator_ColumnPropNameInRow="committed_amount" msprop:Generator_ColumnPropNameInTable="committed_amountColumn" msprop:Generator_UserColumnName="committed_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="balance" msprop:Generator_ColumnVarNameInTable="columnbalance" msprop:Generator_ColumnPropNameInRow="balance" msprop:Generator_ColumnPropNameInTable="balanceColumn" msprop:Generator_UserColumnName="balance" type="xs:string" minOccurs="0" />
+              <xs:element name="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" msprop:Generator_UserColumnName="departmentname" type="xs:string" minOccurs="0" />
+              <xs:element name="Category_LoadingStatus" msprop:Generator_ColumnVarNameInTable="columnCategory_LoadingStatus" msprop:Generator_ColumnPropNameInRow="Category_LoadingStatus" msprop:Generator_ColumnPropNameInTable="Category_LoadingStatusColumn" msprop:Generator_UserColumnName="Category_LoadingStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ccp1" msprop:Generator_TableClassName="ccp1DataTable" msprop:Generator_TableVarName="tableccp1" msprop:Generator_RowChangedName="ccp1RowChanged" msprop:Generator_TablePropName="ccp1" msprop:Generator_RowDeletingName="ccp1RowDeleting" msprop:Generator_RowChangingName="ccp1RowChanging" msprop:Generator_RowEvHandlerName="ccp1RowChangeEventHandler" msprop:Generator_RowDeletedName="ccp1RowDeleted" msprop:Generator_RowClassName="ccp1Row" msprop:Generator_UserTableName="ccp1" msprop:Generator_RowEvArgName="ccp1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn" msprop:Generator_UserColumnName="institutename" type="xs:string" minOccurs="0" />
+              <xs:element name="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn" msprop:Generator_UserColumnName="libraryname" type="xs:string" minOccurs="0" />
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city" type="xs:string" minOccurs="0" />
+              <xs:element name="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn" msprop:Generator_UserColumnName="state" type="xs:string" minOccurs="0" />
+              <xs:element name="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn" msprop:Generator_UserColumnName="phoneno" type="xs:string" minOccurs="0" />
+              <xs:element name="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn" msprop:Generator_UserColumnName="fax" type="xs:string" minOccurs="0" />
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

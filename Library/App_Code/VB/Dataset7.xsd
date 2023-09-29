@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset7" targetNamespace="http://tempuri.org/Dataset7.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset7.xsd" xmlns:mstns="http://tempuri.org/Dataset7.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset7" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="writeoffApprovalVIEW_R">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="institutename" type="xs:string" />
+							<xs:element name="libraryname" type="xs:string" />
+							<xs:element name="address" type="xs:string" />
+							<xs:element name="city" type="xs:string" />
+							<xs:element name="pincode" type="xs:decimal" />
+							<xs:element name="state" type="xs:string" />
+							<xs:element name="phoneno" type="xs:string" />
+							<xs:element name="fax" type="xs:string" />
+							<xs:element name="email" type="xs:string" />
+							<xs:element name="gram" type="xs:string" />
+							<xs:element name="accessionnumber" type="xs:string" minOccurs="0" />
+							<xs:element name="auf1" type="xs:string" minOccurs="0" />
+							<xs:element name="aum1" type="xs:string" minOccurs="0" />
+							<xs:element name="aul1" type="xs:string" minOccurs="0" />
+							<xs:element name="auf2" type="xs:string" minOccurs="0" />
+							<xs:element name="aum2" type="xs:string" minOccurs="0" />
+							<xs:element name="aul2" type="xs:string" minOccurs="0" />
+							<xs:element name="auf3" type="xs:string" minOccurs="0" />
+							<xs:element name="aum3" type="xs:string" minOccurs="0" />
+							<xs:element name="aul3" type="xs:string" minOccurs="0" />
+							<xs:element name="editorFname1" type="xs:string" minOccurs="0" />
+							<xs:element name="editorMname1" type="xs:string" minOccurs="0" />
+							<xs:element name="editorLname1" type="xs:string" minOccurs="0" />
+							<xs:element name="editorFname2" type="xs:string" minOccurs="0" />
+							<xs:element name="editorMname2" type="xs:string" minOccurs="0" />
+							<xs:element name="editorLname2" type="xs:string" minOccurs="0" />
+							<xs:element name="editorFname3" type="xs:string" minOccurs="0" />
+							<xs:element name="editorMname3" type="xs:string" minOccurs="0" />
+							<xs:element name="editorLname3" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerFname1" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerMname1" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerLname1" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerFname2" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerMname2" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerLname2" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerFname3" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerMname3" type="xs:string" minOccurs="0" />
+							<xs:element name="CompilerLname3" type="xs:string" minOccurs="0" />
+							<xs:element name="illusFname1" type="xs:string" minOccurs="0" />
+							<xs:element name="illusMname1" type="xs:string" minOccurs="0" />
+							<xs:element name="illusLname1" type="xs:string" minOccurs="0" />
+							<xs:element name="illusFname2" type="xs:string" minOccurs="0" />
+							<xs:element name="illusMname2" type="xs:string" minOccurs="0" />
+							<xs:element name="illusrLname2" type="xs:string" minOccurs="0" />
+							<xs:element name="illusFname3" type="xs:string" minOccurs="0" />
+							<xs:element name="illusMname3" type="xs:string" minOccurs="0" />
+							<xs:element name="illusLname3" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorFname1" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorMname11" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorLname1" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorFname2" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorMname2" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorLname2" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorFname3" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorMname3" type="xs:string" minOccurs="0" />
+							<xs:element name="TranslatorLname3" type="xs:string" minOccurs="0" />
+							<xs:element name="ETalEditor" type="xs:string" minOccurs="0" />
+							<xs:element name="ETalCompiler" type="xs:string" minOccurs="0" />
+							<xs:element name="ETalIllus" type="xs:string" minOccurs="0" />
+							<xs:element name="ETalTrans" type="xs:string" minOccurs="0" />
+							<xs:element name="ETalAuthor" type="xs:string" minOccurs="0" />
+							<xs:element name="firstname" type="xs:string" minOccurs="0" />
+							<xs:element name="Expr1" type="xs:string" />
+							<xs:element name="LoadingDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="af1" type="xs:string" minOccurs="0" />
+							<xs:element name="am1" type="xs:string" minOccurs="0" />
+							<xs:element name="al1" type="xs:string" minOccurs="0" />
+							<xs:element name="af2" type="xs:string" minOccurs="0" />
+							<xs:element name="am2" type="xs:string" minOccurs="0" />
+							<xs:element name="al2" type="xs:string" minOccurs="0" />
+							<xs:element name="af3" type="xs:string" minOccurs="0" />
+							<xs:element name="am3" type="xs:string" minOccurs="0" />
+							<xs:element name="al3" type="xs:string" minOccurs="0" />
+							<xs:element name="title" type="xs:string" minOccurs="0" />
+							<xs:element name="classnumber" type="xs:string" minOccurs="0" />
+							<xs:element name="booknumber" type="xs:string" minOccurs="0" />
+							<xs:element name="bookprice" type="xs:decimal" minOccurs="0" />
+							<xs:element name="writeoffdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DocumentNo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

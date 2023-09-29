@@ -1,0 +1,228 @@
+﻿html {
+    min-height:100%;
+    margin:0;
+}
+body {
+    min-height:100%;
+    margin:0;
+    
+}
+/*Responsive alternate row color - see ex. MobBookSer.aspx*/
+        .OddRowColor {   
+            background-color:#e2fae5;
+        }
+        .EvenRowColor {
+            background-color:#b6ff00;
+        }
+        .fnBol {
+            border-bottom:2px solid green;
+            font-weight:bold;
+            background-color:white;
+            padding:0;
+        }
+/**********************************/
+/*Depends on the size of list view basic div container style - also considers mobile, */
+            .basDv {
+      max-width:94%;
+        margin-top:12px;
+        border:1px solid green;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:11px;
+        min-height:500px;
+       
+              background-color:lavenderblush;
+              border-radius:5px;
+padding:8px;             
+
+    }
+.tx1, .tx2, .tx3 {
+    width:100%;
+    height:18px;
+}
+.legenD {
+    display:none;
+}
+.dvGenHt { /*Not in use*/
+    margin-top:8px;
+}
+.HeadrLin {
+    font-weight:normal;
+    font-size:15px;
+    font-family:inherit;
+    padding:4px 10px 4px 10px;
+    background-color:white;
+    border-radius:4px;
+}
+    @media only screen and (max-width:465px) {
+    .basDv {
+        min-width:99%;
+        border:1px solid #597960;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:10px;
+        margin-top:5px;
+              background-color:lavenderblush;
+              border-radius:5px;
+padding:8px;             
+
+    }
+        .legenD {
+            display:inline;
+            text-decoration:underline;
+            float:right;
+        }
+        .tx1 {   /*Note css on input like this NOT working - use style inline instead !!!*/
+            width:180px;
+    height:12px;
+        }
+        .tx2 {
+            width:100%;
+    height:18px;
+        }
+        .tx3 {
+            width:70%;
+    height:18px;
+        }
+        .tx1, tx2, tx3::after {
+                        content: "&#9747";
+
+}
+
+    }
+    @media only screen and (min-width:466px ) and (max-width:100%) {
+    .basDv {
+      min-width:70%;
+      background-color:lavenderblush;
+        border:1px solid black;
+        margin-left:auto;
+        margin-right:auto;
+              border-radius:5px;
+padding:8px;             
+    }
+            .tx1 {
+            width:180px;
+    height:12px;
+        }
+        .tx2 {
+            width:100%;
+    height:18px;
+        }
+        .tx3 {
+            width:70%;
+    height:18px;
+        }
+        .tx1:after {
+            content: "&#9747";
+        }
+    }
+/*********************************/
+
+.ancLi {  /*Not in use yet*/
+    padding:4px;
+    text-decoration:none;
+    background-color:lightblue;
+    border-radius:3px;
+}
+    .ancLi:hover {
+        background-color:darkblue;
+    text-decoration:none;
+    }
+
+.ancV {
+    vertical-align:middle !important;
+    text-align:center;  /*not in use yet*/
+}
+
+.txtHt {
+   height:20px;
+   padding:2px;
+}
+
+/*input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+input[type=search]::-moz-search-cancel-button {
+    -moz-appearance: searchfield-cancel-button;
+}*/
+
+.bakTop { /*not in use*/
+    right:10px;
+    position:absolute;
+    background-color:ActiveBorder;
+    bottom:13px;
+    padding:10px;
+    display:block;
+    box-sizing:border-box;
+    -webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+    .bakTop:hover {
+        background-color:Highlight;
+        text-decoration:none;
+        color:white;
+    }
+
+.scrTop { /*to be implemented - not working in child iframe */
+    top:500px;
+    position:fixed;
+    display:none;
+
+}
+
+.scrTop2 { /*to be implemented - not working in child iframe */
+    top:300px;
+    position:fixed;
+    display:block;
+    opacity:0.5;
+    -webkit-backface-visibility: hidden;
+
+}
+
+label {
+    font-weight:normal !important;
+    color:black;
+}
+input {
+    height:22px;
+    color:black;
+}
+.select {
+   height:22px;
+    color:black;
+}
+.rowLHt1 {  /*Bootstrap or other row height or pad top bott*/
+    /*min-height:30px;*/
+    padding:4px 0px 4px 0px;
+}
+/*regular span label*/
+.spanR {
+    font-weight:normal;
+    text-decoration:none;
+    font-size:11px;
+}
+
+.txtGen {
+    border-radius:3px;
+    border:1px solid lightslategray;
+    min-height:24px;
+    display:inline;
+        
+}
+    .txtGen:focus {
+    border:1px solid  darkgreen;
+    }
+    
+/*Suggestion Styles*/
+    .SugMed {
+     width:250px !important;
+     font-size:13px;
+     max-height:200px;
+     overflow:auto;
+     padding:1px;
+     cursor:pointer;
+     z-index:10;
+     margin-top:0px;
+     border:1px solid green;
+    }

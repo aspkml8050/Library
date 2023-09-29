@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OrderJournalforpublisherDataSet" targetNamespace="http://tempuri.org/OrderJournalforpublisherDataSet.xsd" xmlns:mstns="http://tempuri.org/OrderJournalforpublisherDataSet.xsd" xmlns="http://tempuri.org/OrderJournalforpublisherDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibraryConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibraryConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="orderjournalviewPub_RTableAdapter" GeneratorDataComponentClassName="orderjournalviewPub_RTableAdapter" Name="orderjournalviewPub_R" UserDataComponentName="orderjournalviewPub_RTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.orderjournalviewPub_R" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     orderjournalviewPub_R.*
+FROM         orderjournalviewPub_R</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="Order_Status" DataSetColumn="Order_Status" />
+              <Mapping SourceColumn="journal_title" DataSetColumn="journal_title" />
+              <Mapping SourceColumn="start_date" DataSetColumn="start_date" />
+              <Mapping SourceColumn="expiry_date" DataSetColumn="expiry_date" />
+              <Mapping SourceColumn="starting_volume" DataSetColumn="starting_volume" />
+              <Mapping SourceColumn="ending_volume" DataSetColumn="ending_volume" />
+              <Mapping SourceColumn="starting_issue" DataSetColumn="starting_issue" />
+              <Mapping SourceColumn="ending_issue" DataSetColumn="ending_issue" />
+              <Mapping SourceColumn="peraddress" DataSetColumn="peraddress" />
+              <Mapping SourceColumn="percity" DataSetColumn="percity" />
+              <Mapping SourceColumn="perstate" DataSetColumn="perstate" />
+              <Mapping SourceColumn="percountry" DataSetColumn="percountry" />
+              <Mapping SourceColumn="perpincode" DataSetColumn="perpincode" />
+              <Mapping SourceColumn="priority" DataSetColumn="priority" />
+              <Mapping SourceColumn="OrderNo" DataSetColumn="OrderNo" />
+              <Mapping SourceColumn="JournalPackage_No" DataSetColumn="JournalPackage_No" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="IPAddress_1" DataSetColumn="IPAddress_1" />
+              <Mapping SourceColumn="IPAddress_2" DataSetColumn="IPAddress_2" />
+              <Mapping SourceColumn="shortname" DataSetColumn="shortname" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OrderJournalforpublisherDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OrderJournalforpublisherDataSet" msprop:Generator_DataSetName="OrderJournalforpublisherDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="orderjournalviewPub_R" msprop:Generator_UserTableName="orderjournalviewPub_R" msprop:Generator_RowDeletedName="orderjournalviewPub_RRowDeleted" msprop:Generator_RowChangedName="orderjournalviewPub_RRowChanged" msprop:Generator_RowClassName="orderjournalviewPub_RRow" msprop:Generator_RowChangingName="orderjournalviewPub_RRowChanging" msprop:Generator_RowEvArgName="orderjournalviewPub_RRowChangeEvent" msprop:Generator_RowEvHandlerName="orderjournalviewPub_RRowChangeEventHandler" msprop:Generator_TableClassName="orderjournalviewPub_RDataTable" msprop:Generator_TableVarName="tableorderjournalviewPub_R" msprop:Generator_RowDeletingName="orderjournalviewPub_RRowDeleting" msprop:Generator_TablePropName="orderjournalviewPub_R">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="institutename" msprop:Generator_UserColumnName="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_UserColumnName="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" msprop:Generator_UserColumnName="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" type="xs:decimal" />
+              <xs:element name="state" msprop:Generator_UserColumnName="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno" msprop:Generator_UserColumnName="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram" msprop:Generator_UserColumnName="gram" msprop:Generator_ColumnVarNameInTable="columngram" msprop:Generator_ColumnPropNameInRow="gram" msprop:Generator_ColumnPropNameInTable="gramColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstname" msprop:Generator_UserColumnName="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderDate" msprop:Generator_UserColumnName="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Order_Status" msprop:Generator_UserColumnName="Order_Status" msprop:Generator_ColumnVarNameInTable="columnOrder_Status" msprop:Generator_ColumnPropNameInRow="Order_Status" msprop:Generator_ColumnPropNameInTable="Order_StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="journal_title" msprop:Generator_UserColumnName="journal_title" msprop:Generator_ColumnVarNameInTable="columnjournal_title" msprop:Generator_ColumnPropNameInRow="journal_title" msprop:Generator_ColumnPropNameInTable="journal_titleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="start_date" msprop:Generator_UserColumnName="start_date" msprop:Generator_ColumnVarNameInTable="columnstart_date" msprop:Generator_ColumnPropNameInRow="start_date" msprop:Generator_ColumnPropNameInTable="start_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="expiry_date" msprop:Generator_UserColumnName="expiry_date" msprop:Generator_ColumnVarNameInTable="columnexpiry_date" msprop:Generator_ColumnPropNameInRow="expiry_date" msprop:Generator_ColumnPropNameInTable="expiry_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="starting_volume" msprop:Generator_UserColumnName="starting_volume" msprop:Generator_ColumnVarNameInTable="columnstarting_volume" msprop:Generator_ColumnPropNameInRow="starting_volume" msprop:Generator_ColumnPropNameInTable="starting_volumeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ending_volume" msprop:Generator_UserColumnName="ending_volume" msprop:Generator_ColumnVarNameInTable="columnending_volume" msprop:Generator_ColumnPropNameInRow="ending_volume" msprop:Generator_ColumnPropNameInTable="ending_volumeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="starting_issue" msprop:Generator_UserColumnName="starting_issue" msprop:Generator_ColumnVarNameInTable="columnstarting_issue" msprop:Generator_ColumnPropNameInRow="starting_issue" msprop:Generator_ColumnPropNameInTable="starting_issueColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ending_issue" msprop:Generator_UserColumnName="ending_issue" msprop:Generator_ColumnVarNameInTable="columnending_issue" msprop:Generator_ColumnPropNameInRow="ending_issue" msprop:Generator_ColumnPropNameInTable="ending_issueColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="peraddress" msprop:Generator_UserColumnName="peraddress" msprop:Generator_ColumnVarNameInTable="columnperaddress" msprop:Generator_ColumnPropNameInRow="peraddress" msprop:Generator_ColumnPropNameInTable="peraddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="percity" msprop:Generator_UserColumnName="percity" msprop:Generator_ColumnVarNameInTable="columnpercity" msprop:Generator_ColumnPropNameInRow="percity" msprop:Generator_ColumnPropNameInTable="percityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="perstate" msprop:Generator_UserColumnName="perstate" msprop:Generator_ColumnVarNameInTable="columnperstate" msprop:Generator_ColumnPropNameInRow="perstate" msprop:Generator_ColumnPropNameInTable="perstateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="percountry" msprop:Generator_UserColumnName="percountry" msprop:Generator_ColumnVarNameInTable="columnpercountry" msprop:Generator_ColumnPropNameInRow="percountry" msprop:Generator_ColumnPropNameInTable="percountryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="perpincode" msprop:Generator_UserColumnName="perpincode" msprop:Generator_ColumnVarNameInTable="columnperpincode" msprop:Generator_ColumnPropNameInRow="perpincode" msprop:Generator_ColumnPropNameInTable="perpincodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="priority" msprop:Generator_UserColumnName="priority" msprop:Generator_ColumnVarNameInTable="columnpriority" msprop:Generator_ColumnPropNameInRow="priority" msprop:Generator_ColumnPropNameInTable="priorityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderNo" msprop:Generator_UserColumnName="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JournalPackage_No" msprop:Generator_UserColumnName="JournalPackage_No" msprop:Generator_ColumnVarNameInTable="columnJournalPackage_No" msprop:Generator_ColumnPropNameInRow="JournalPackage_No" msprop:Generator_ColumnPropNameInTable="JournalPackage_NoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IPAddress_1" msprop:Generator_UserColumnName="IPAddress_1" msprop:Generator_ColumnVarNameInTable="columnIPAddress_1" msprop:Generator_ColumnPropNameInRow="IPAddress_1" msprop:Generator_ColumnPropNameInTable="IPAddress_1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IPAddress_2" msprop:Generator_UserColumnName="IPAddress_2" msprop:Generator_ColumnVarNameInTable="columnIPAddress_2" msprop:Generator_ColumnPropNameInRow="IPAddress_2" msprop:Generator_ColumnPropNameInTable="IPAddress_2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shortname" msprop:Generator_UserColumnName="shortname" msprop:Generator_ColumnPropNameInRow="shortname" msprop:Generator_ColumnVarNameInTable="columnshortname" msprop:Generator_ColumnPropNameInTable="shortnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

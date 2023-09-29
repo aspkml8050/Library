@@ -1,0 +1,4 @@
+﻿Namespace IronPdf
+    Friend Class HtmlToPdf
+    End Class
+End Namespace

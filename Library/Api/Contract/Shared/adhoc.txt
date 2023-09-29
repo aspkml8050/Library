@@ -1,0 +1,12 @@
+            ReturnData<Usertypepermissions> retd = new();
+            try
+            {
+
+                retd.IsSuccess = true;
+                retd.Mesg = "";
+            }catch(Exception exp)
+            {
+                retd.IsSuccess = false;
+                retd.Mesg = exp.Message + ";" + exp.InnerException ?? exp.Message;
+            }
+            return retd;

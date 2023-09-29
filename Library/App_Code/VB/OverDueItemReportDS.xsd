@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OverDueItemReportDS" targetNamespace="http://tempuri.org/OverDueItemReportDS.xsd" xmlns:mstns="http://tempuri.org/OverDueItemReportDS.xsd" xmlns="http://tempuri.org/OverDueItemReportDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.librarysetupinformation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     institutename, libraryname, address, city, pincode, state, fax, phoneno, email, gram, currency, shortname, '' as memID, '' as memName, '' as accno, '' as title, '' as author, '' as issuedate, '' as ODD, '' as ODC, '' as departmentname, '' as program_name ,fathername,Mobile ,peraddress,Localaddress,uppin,country FROM         librarysetupinformation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="currency" DataSetColumn="currency" />
+              <Mapping SourceColumn="shortname" DataSetColumn="shortname" />
+              <Mapping SourceColumn="memID" DataSetColumn="memID" />
+              <Mapping SourceColumn="memName" DataSetColumn="memName" />
+              <Mapping SourceColumn="accno" DataSetColumn="accno" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="issuedate" DataSetColumn="issuedate" />
+              <Mapping SourceColumn="ODC" DataSetColumn="ODC" />
+              <Mapping SourceColumn="ODD" DataSetColumn="ODD" />
+              <Mapping SourceColumn="author" DataSetColumn="author" />
+              <Mapping SourceColumn="departmentname" DataSetColumn="departmentname" />
+              <Mapping SourceColumn="program_name" DataSetColumn="program_name" />
+              <Mapping SourceColumn="fathername" DataSetColumn="fathername" />
+              <Mapping SourceColumn="Mobile" DataSetColumn="Mobile" />
+              <Mapping SourceColumn="peraddress" DataSetColumn="peraddress" />
+              <Mapping SourceColumn="Localaddress" DataSetColumn="Localaddress" />
+              <Mapping SourceColumn="uppin" DataSetColumn="uppin" />
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverDueItemReportDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OverDueItemReportDS" msprop:Generator_DataSetName="OverDueItemReportDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="institutename" msprop:Generator_UserColumnName="institutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_UserColumnName="libraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInTable="addressColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" msprop:Generator_UserColumnName="pincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" type="xs:decimal" />
+              <xs:element name="state" msprop:Generator_UserColumnName="state" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInTable="stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInTable="faxColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno" msprop:Generator_UserColumnName="phoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInTable="emailColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram" msprop:Generator_UserColumnName="gram" msprop:Generator_ColumnPropNameInRow="gram" msprop:Generator_ColumnVarNameInTable="columngram" msprop:Generator_ColumnPropNameInTable="gramColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="currency" msprop:Generator_UserColumnName="currency" msprop:Generator_ColumnPropNameInRow="currency" msprop:Generator_ColumnVarNameInTable="columncurrency" msprop:Generator_ColumnPropNameInTable="currencyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shortname" msprop:Generator_UserColumnName="shortname" msprop:Generator_ColumnPropNameInRow="shortname" msprop:Generator_ColumnVarNameInTable="columnshortname" msprop:Generator_ColumnPropNameInTable="shortnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="memID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="memID" msprop:Generator_ColumnPropNameInRow="memID" msprop:Generator_ColumnVarNameInTable="columnmemID" msprop:Generator_ColumnPropNameInTable="memIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="memName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="memName" msprop:Generator_ColumnPropNameInRow="memName" msprop:Generator_ColumnVarNameInTable="columnmemName" msprop:Generator_ColumnPropNameInTable="memNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="accno" msdata:ReadOnly="true" msprop:Generator_UserColumnName="accno" msprop:Generator_ColumnPropNameInRow="accno" msprop:Generator_ColumnVarNameInTable="columnaccno" msprop:Generator_ColumnPropNameInTable="accnoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="title" msdata:ReadOnly="true" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInTable="titleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="issuedate" msdata:ReadOnly="true" msprop:Generator_UserColumnName="issuedate" msprop:Generator_ColumnPropNameInRow="issuedate" msprop:Generator_ColumnVarNameInTable="columnissuedate" msprop:Generator_ColumnPropNameInTable="issuedateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ODC" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ODC" msprop:Generator_ColumnPropNameInRow="ODC" msprop:Generator_ColumnVarNameInTable="columnODC" msprop:Generator_ColumnPropNameInTable="ODCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ODD" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ODD" msprop:Generator_ColumnPropNameInRow="ODD" msprop:Generator_ColumnVarNameInTable="columnODD" msprop:Generator_ColumnPropNameInTable="ODDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="author" msdata:ReadOnly="true" msprop:Generator_UserColumnName="author" msprop:Generator_ColumnPropNameInRow="author" msprop:Generator_ColumnVarNameInTable="columnauthor" msprop:Generator_ColumnPropNameInTable="authorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="departmentname" msdata:ReadOnly="true" msprop:Generator_UserColumnName="departmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="program_name" msdata:ReadOnly="true" msprop:Generator_UserColumnName="program_name" msprop:Generator_ColumnPropNameInRow="program_name" msprop:Generator_ColumnVarNameInTable="columnprogram_name" msprop:Generator_ColumnPropNameInTable="program_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="fathername" msdata:ReadOnly="true" msprop:Generator_UserColumnName="fathername" msprop:Generator_ColumnPropNameInRow="fathername" msprop:Generator_ColumnVarNameInTable="columnfathername" msprop:Generator_ColumnPropNameInTable="fathernameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Mobile" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Mobile" msprop:Generator_ColumnPropNameInRow="Mobile" msprop:Generator_ColumnVarNameInTable="columnMobile" msprop:Generator_ColumnPropNameInTable="MobileColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="peraddress" msdata:ReadOnly="true" msprop:Generator_UserColumnName="peraddress" msprop:Generator_ColumnPropNameInRow="peraddress" msprop:Generator_ColumnVarNameInTable="columnperaddress" msprop:Generator_ColumnPropNameInTable="peraddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Localaddress" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Localaddress" msprop:Generator_ColumnPropNameInRow="Localaddress" msprop:Generator_ColumnVarNameInTable="columnLocaladdress" msprop:Generator_ColumnPropNameInTable="LocaladdressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="uppin" msdata:ReadOnly="true" msprop:Generator_UserColumnName="uppin" msprop:Generator_ColumnPropNameInRow="uppin" msprop:Generator_ColumnVarNameInTable="columnuppin" msprop:Generator_ColumnPropNameInTable="uppinColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInTable="CountryColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

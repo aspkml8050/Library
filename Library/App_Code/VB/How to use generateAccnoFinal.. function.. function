@@ -1,0 +1,25 @@
+
+----------Passing Paramaters Description with GenerateAccfinal Function-(By kaushal at 16-10.14)-------
+
+Description: function type is 'passing argument with return value ' 
+
+How to use : This function return a string (for multiple accno its will be with seperated ',' )
+as complete accession no with your desired selection for creating accession no in webapge. 
+we need to split this string in array list on the local code block in page, after this we can use with supporting code of 
+Accessioning  in web page.
+
+---------Description of Passing argument in function.
+Connstr----------------connectionstring from your calling body
+cmbaccessionprefix-------accessionprefixsuffix DropDownlist name
+Rbaccession1----------radiobutton as Accession no. with Prefix
+RBSuffix-------------radiobutton as Accession no. with suffix
+RBPreSuff-----------radiobutton as Accession no with Prefix and Suffix
+Rbmanual1------------radiobutton as Accession no Manual Entry
+noofcopy----Integer variable as Being to generate NO. of coppies
+chkApplyRange-----In case manual entry apply range checkbox
+txtaccessionstr-------- Textstring of TextBox as Enter Manual Accession No. (pass text in string)
+chkApplyRange---------checkBox as Flag for Apply range
+cmbaccrange------------dropdownlist for selection of Apply range if chkApplyRange is checked
+
+Note: For complete example or live example see Interface Direct Accessioning (existingbookacc.aspx) 
+

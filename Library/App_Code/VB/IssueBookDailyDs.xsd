@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IssueBookDailyDs" targetNamespace="http://tempuri.org/IssueBookDailyDs.xsd" xmlns:mstns="http://tempuri.org/IssueBookDailyDs.xsd" xmlns="http://tempuri.org/IssueBookDailyDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="issuedbookreport1TableAdapter" Name="issuedbookreport1">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.issuedbookreport1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     accessionnumber, title, author, userid, UserName, issuedate, duedate, Joinyear, program_id, departmentcode, classname, userid1, callnumber, 
+                      institutename, libraryname, address, city, pincode, state, phoneno, fax, email, gram, status
+FROM         issuedbookreport1</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="accessionnumber" DataSetColumn="accessionnumber" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="author" DataSetColumn="author" />
+              <Mapping SourceColumn="userid" DataSetColumn="userid" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="issuedate" DataSetColumn="issuedate" />
+              <Mapping SourceColumn="duedate" DataSetColumn="duedate" />
+              <Mapping SourceColumn="Joinyear" DataSetColumn="Joinyear" />
+              <Mapping SourceColumn="program_id" DataSetColumn="program_id" />
+              <Mapping SourceColumn="departmentcode" DataSetColumn="departmentcode" />
+              <Mapping SourceColumn="classname" DataSetColumn="classname" />
+              <Mapping SourceColumn="userid1" DataSetColumn="userid1" />
+              <Mapping SourceColumn="callnumber" DataSetColumn="callnumber" />
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IssueBookDailyDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="issuedbookreport1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accessionnumber" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1600" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="author" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userid" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="92" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="issuedate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="duedate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Joinyear" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="program_id" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="departmentcode" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="classname" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userid1" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="callnumber" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="institutename">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" type="xs:decimal" />
+              <xs:element name="state">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="29" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Monthname" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0034_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0035_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0036_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0037_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0038_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0039_" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_0" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_1" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_2" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_3" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_4" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_5" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_6" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_7" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_8" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_9" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_0" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_1" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_2" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_3" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_4" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_5" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_6" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_7" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_8" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_9" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_0" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_1" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgBook" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgMem" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

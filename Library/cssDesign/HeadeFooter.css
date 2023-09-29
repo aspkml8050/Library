@@ -1,0 +1,104 @@
+﻿html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing:inherit;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+.dvM {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    align-items: stretch;
+    float: left; /* to avoid scroll bar on html and body */
+}
+
+.dv2 {
+    height: 100%;
+    margin: 0;
+    flex-grow: 1;
+}
+.dv3 {
+    line-height: 60px;
+    vertical-align: middle;
+    text-align:center;
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.dv1, dv2, dv3 {
+    flex-shrink: 0;
+    margin: 0 !important;
+}
+
+
+
+/*general auto sugg style*/
+
+.autocomplete_completionListElement {
+    margin: 0px !important;
+    background-color: inherit;
+    color: windowtext;
+    border: buttonshadow;
+    border-width: 1px;
+    border-style: solid;
+    cursor: initial;
+    overflow: auto;
+    height: 200px;
+    text-align: left;
+    list-style-type: none;
+}
+
+
+/*************************/
+.nav-item{
+    width:180px;
+}
+.tabmss {
+    background-color: #edebd2;
+    color: #565e74;
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+    .tabmss:hover {
+        background-color: #edebd2;
+        color: #565e74;
+        border-bottom:3px solid #c4a16b;
+    }
+
+
+
+#dvMainLibraryApi {
+    position: absolute;
+    top: 4%;
+    border-radius: 6px;
+    border: 1px solid #565e74;
+    padding: 7px 10px;
+    background-color: #f3f4f0;
+    left: 5%;
+    height: 700px;
+    width: 90%;
+}
+.hideApi{
+    display:none !important;
+}
+
+#dvhtml {
+    z-index:100;
+    background-color:white;
+    margin: 8px 10px;
+    height: 100%;
+    width: 100%;
+}
+

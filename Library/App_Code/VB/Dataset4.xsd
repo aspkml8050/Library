@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dataset4" targetNamespace="http://tempuri.org/Dataset4.xsd" xmlns:mstns="http://tempuri.org/Dataset4.xsd" xmlns="http://tempuri.org/Dataset4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="circ_receipt_viewTableAdapter" GeneratorDataComponentClassName="circ_receipt_viewTableAdapter" Name="circ_receipt_view" UserDataComponentName="circ_receipt_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.circ_receipt_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     circ_receipt_view.*
+FROM         circ_receipt_view</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Member_Id" DataSetColumn="Member_Id" />
+              <Mapping SourceColumn="Membername" DataSetColumn="Membername" />
+              <Mapping SourceColumn="departmentname" DataSetColumn="departmentname" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Receipt_No" DataSetColumn="Receipt_No" />
+              <Mapping SourceColumn="institutename" DataSetColumn="institutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="Receipt_Date" DataSetColumn="Receipt_Date" />
+              <Mapping SourceColumn="currency" DataSetColumn="currency" />
+              <Mapping SourceColumn="classname" DataSetColumn="classname" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dataset4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Dataset4" msprop:Generator_DataSetName="Dataset4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="circ_receipt_view" msprop:Generator_UserTableName="circ_receipt_view" msprop:Generator_RowDeletedName="circ_receipt_viewRowDeleted" msprop:Generator_TableClassName="circ_receipt_viewDataTable" msprop:Generator_RowChangedName="circ_receipt_viewRowChanged" msprop:Generator_RowClassName="circ_receipt_viewRow" msprop:Generator_RowChangingName="circ_receipt_viewRowChanging" msprop:Generator_RowEvArgName="circ_receipt_viewRowChangeEvent" msprop:Generator_RowEvHandlerName="circ_receipt_viewRowChangeEventHandler" msprop:Generator_TablePropName="circ_receipt_view" msprop:Generator_TableVarName="tablecirc_receipt_view" msprop:Generator_RowDeletingName="circ_receipt_viewRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Member_Id" msprop:Generator_UserColumnName="Member_Id" msprop:Generator_ColumnPropNameInRow="Member_Id" msprop:Generator_ColumnVarNameInTable="columnMember_Id" msprop:Generator_ColumnPropNameInTable="Member_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Membername" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Membername" msprop:Generator_ColumnPropNameInRow="Membername" msprop:Generator_ColumnVarNameInTable="columnMembername" msprop:Generator_ColumnPropNameInTable="MembernameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="92" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departmentname" msdata:ReadOnly="true" msprop:Generator_UserColumnName="departmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Receipt_No" msprop:Generator_UserColumnName="Receipt_No" msprop:Generator_ColumnPropNameInRow="Receipt_No" msprop:Generator_ColumnVarNameInTable="columnReceipt_No" msprop:Generator_ColumnPropNameInTable="Receipt_NoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="institutename" msprop:Generator_UserColumnName="institutename" msprop:Generator_ColumnPropNameInRow="institutename" msprop:Generator_ColumnVarNameInTable="columninstitutename" msprop:Generator_ColumnPropNameInTable="institutenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_UserColumnName="libraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInTable="statusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Receipt_Date" msprop:Generator_UserColumnName="Receipt_Date" msprop:Generator_ColumnPropNameInRow="Receipt_Date" msprop:Generator_ColumnVarNameInTable="columnReceipt_Date" msprop:Generator_ColumnPropNameInTable="Receipt_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="currency" msprop:Generator_UserColumnName="currency" msprop:Generator_ColumnPropNameInRow="currency" msprop:Generator_ColumnVarNameInTable="columncurrency" msprop:Generator_ColumnPropNameInTable="currencyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="classname" msprop:Generator_UserColumnName="classname" msprop:Generator_ColumnPropNameInRow="classname" msprop:Generator_ColumnVarNameInTable="columnclassname" msprop:Generator_ColumnPropNameInTable="classnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

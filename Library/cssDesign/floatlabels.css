@@ -1,0 +1,71 @@
+﻿.input-wrapper {
+    position: relative;
+    margin: 16px auto ;
+}
+
+.form-control2 {
+    display: block;
+    line-height: 2em;
+    margin: 0;
+    padding-left: 10px;
+    width: 100%;
+    font-size: medium;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 500;
+    border: thin solid grey;
+}
+
+    .form-control2:focus {
+        /*border:  1px solid #2c7ac9;*/
+        border-top: 0px solid yellow !important;
+        border-left: 0px solid inherit !important;
+        border-right: 0px solid inherit !important;
+        border-bottom: 2px solid blue;
+    }
+
+.control-label {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    bottom: 1.9rem;
+    color: #646e70;
+    transition: 0.2s ease-in-out transform;
+    font-size: 15px;
+}
+
+.form-control2:placeholder-shown + .control-label {
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+}
+
+.form-control2:not(:placeholder-shown) + .control-label,
+.form-control2:focus:not(:placeholder-shown) + .control-label {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: 0.2s ease-in-out transform;
+}
+
+/**
+ * Extra Css - not Required
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color:#d3dac1;
+}
+
+.box {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20% auto;
+}

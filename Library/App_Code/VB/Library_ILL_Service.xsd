@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Library_ILL_Service" targetNamespace="http://tempuri.org/Library_ILL_Service.xsd" xmlns:mstns="http://tempuri.org/Library_ILL_Service.xsd" xmlns="http://tempuri.org/Library_ILL_Service.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LIbrary_Service_IllTableAdapter" GeneratorDataComponentClassName="LIbrary_Service_IllTableAdapter" Name="LIbrary_Service_Ill" UserDataComponentName="LIbrary_Service_IllTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.LIbrary_Service_Ill" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     ASinstitutename, libraryname, address, city, pincode, state, phoneno, fax, email, gram, service_id, service, invoice_no, invoice_date, member, 
+                      service_tax, cess, duedate, Actual_amt, total_amt, postage, tax, services, noofcopy, rate, id, tot_amt, ILLid, ILLname
+FROM         LIbrary_Service_Ill</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ASinstitutename" DataSetColumn="ASinstitutename" />
+              <Mapping SourceColumn="libraryname" DataSetColumn="libraryname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="pincode" DataSetColumn="pincode" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="phoneno" DataSetColumn="phoneno" />
+              <Mapping SourceColumn="fax" DataSetColumn="fax" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="gram" DataSetColumn="gram" />
+              <Mapping SourceColumn="service_id" DataSetColumn="service_id" />
+              <Mapping SourceColumn="service" DataSetColumn="service" />
+              <Mapping SourceColumn="invoice_no" DataSetColumn="invoice_no" />
+              <Mapping SourceColumn="invoice_date" DataSetColumn="invoice_date" />
+              <Mapping SourceColumn="member" DataSetColumn="member" />
+              <Mapping SourceColumn="service_tax" DataSetColumn="service_tax" />
+              <Mapping SourceColumn="cess" DataSetColumn="cess" />
+              <Mapping SourceColumn="duedate" DataSetColumn="duedate" />
+              <Mapping SourceColumn="Actual_amt" DataSetColumn="Actual_amt" />
+              <Mapping SourceColumn="total_amt" DataSetColumn="total_amt" />
+              <Mapping SourceColumn="postage" DataSetColumn="postage" />
+              <Mapping SourceColumn="tax" DataSetColumn="tax" />
+              <Mapping SourceColumn="services" DataSetColumn="services" />
+              <Mapping SourceColumn="noofcopy" DataSetColumn="noofcopy" />
+              <Mapping SourceColumn="rate" DataSetColumn="rate" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="tot_amt" DataSetColumn="tot_amt" />
+              <Mapping SourceColumn="ILLid" DataSetColumn="ILLid" />
+              <Mapping SourceColumn="ILLname" DataSetColumn="ILLname" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Library_ILL_Service" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Library_ILL_Service" msprop:Generator_DataSetName="Library_ILL_Service">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LIbrary_Service_Ill" msprop:Generator_UserTableName="LIbrary_Service_Ill" msprop:Generator_RowDeletedName="LIbrary_Service_IllRowDeleted" msprop:Generator_RowChangedName="LIbrary_Service_IllRowChanged" msprop:Generator_RowClassName="LIbrary_Service_IllRow" msprop:Generator_RowChangingName="LIbrary_Service_IllRowChanging" msprop:Generator_RowEvArgName="LIbrary_Service_IllRowChangeEvent" msprop:Generator_RowEvHandlerName="LIbrary_Service_IllRowChangeEventHandler" msprop:Generator_TableClassName="LIbrary_Service_IllDataTable" msprop:Generator_TableVarName="tableLIbrary_Service_Ill" msprop:Generator_RowDeletingName="LIbrary_Service_IllRowDeleting" msprop:Generator_TablePropName="LIbrary_Service_Ill">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASinstitutename" msprop:Generator_UserColumnName="ASinstitutename" msprop:Generator_ColumnVarNameInTable="columnASinstitutename" msprop:Generator_ColumnPropNameInRow="ASinstitutename" msprop:Generator_ColumnPropNameInTable="ASinstitutenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="libraryname" msprop:Generator_UserColumnName="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pincode" msprop:Generator_UserColumnName="pincode" msprop:Generator_ColumnVarNameInTable="columnpincode" msprop:Generator_ColumnPropNameInRow="pincode" msprop:Generator_ColumnPropNameInTable="pincodeColumn" type="xs:decimal" />
+              <xs:element name="state" msprop:Generator_UserColumnName="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phoneno" msprop:Generator_UserColumnName="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gram" msprop:Generator_UserColumnName="gram" msprop:Generator_ColumnVarNameInTable="columngram" msprop:Generator_ColumnPropNameInRow="gram" msprop:Generator_ColumnPropNameInTable="gramColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="service_id" msprop:Generator_UserColumnName="service_id" msprop:Generator_ColumnVarNameInTable="columnservice_id" msprop:Generator_ColumnPropNameInRow="service_id" msprop:Generator_ColumnPropNameInTable="service_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="service" msprop:Generator_UserColumnName="service" msprop:Generator_ColumnVarNameInTable="columnservice" msprop:Generator_ColumnPropNameInRow="service" msprop:Generator_ColumnPropNameInTable="serviceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="invoice_no" msprop:Generator_UserColumnName="invoice_no" msprop:Generator_ColumnVarNameInTable="columninvoice_no" msprop:Generator_ColumnPropNameInRow="invoice_no" msprop:Generator_ColumnPropNameInTable="invoice_noColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="invoice_date" msprop:Generator_UserColumnName="invoice_date" msprop:Generator_ColumnVarNameInTable="columninvoice_date" msprop:Generator_ColumnPropNameInRow="invoice_date" msprop:Generator_ColumnPropNameInTable="invoice_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="member" msprop:Generator_UserColumnName="member" msprop:Generator_ColumnVarNameInTable="columnmember" msprop:Generator_ColumnPropNameInRow="member" msprop:Generator_ColumnPropNameInTable="memberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="service_tax" msprop:Generator_UserColumnName="service_tax" msprop:Generator_ColumnVarNameInTable="columnservice_tax" msprop:Generator_ColumnPropNameInRow="service_tax" msprop:Generator_ColumnPropNameInTable="service_taxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cess" msprop:Generator_UserColumnName="cess" msprop:Generator_ColumnVarNameInTable="columncess" msprop:Generator_ColumnPropNameInRow="cess" msprop:Generator_ColumnPropNameInTable="cessColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="duedate" msprop:Generator_UserColumnName="duedate" msprop:Generator_ColumnVarNameInTable="columnduedate" msprop:Generator_ColumnPropNameInRow="duedate" msprop:Generator_ColumnPropNameInTable="duedateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Actual_amt" msprop:Generator_UserColumnName="Actual_amt" msprop:Generator_ColumnVarNameInTable="columnActual_amt" msprop:Generator_ColumnPropNameInRow="Actual_amt" msprop:Generator_ColumnPropNameInTable="Actual_amtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total_amt" msprop:Generator_UserColumnName="total_amt" msprop:Generator_ColumnVarNameInTable="columntotal_amt" msprop:Generator_ColumnPropNameInRow="total_amt" msprop:Generator_ColumnPropNameInTable="total_amtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="postage" msprop:Generator_UserColumnName="postage" msprop:Generator_ColumnVarNameInTable="columnpostage" msprop:Generator_ColumnPropNameInRow="postage" msprop:Generator_ColumnPropNameInTable="postageColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tax" msprop:Generator_UserColumnName="tax" msprop:Generator_ColumnVarNameInTable="columntax" msprop:Generator_ColumnPropNameInRow="tax" msprop:Generator_ColumnPropNameInTable="taxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="services" msprop:Generator_UserColumnName="services" msprop:Generator_ColumnVarNameInTable="columnservices" msprop:Generator_ColumnPropNameInRow="services" msprop:Generator_ColumnPropNameInTable="servicesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="noofcopy" msprop:Generator_UserColumnName="noofcopy" msprop:Generator_ColumnVarNameInTable="columnnoofcopy" msprop:Generator_ColumnPropNameInRow="noofcopy" msprop:Generator_ColumnPropNameInTable="noofcopyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="rate" msprop:Generator_UserColumnName="rate" msprop:Generator_ColumnVarNameInTable="columnrate" msprop:Generator_ColumnPropNameInRow="rate" msprop:Generator_ColumnPropNameInTable="rateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="tot_amt" msprop:Generator_UserColumnName="tot_amt" msprop:Generator_ColumnVarNameInTable="columntot_amt" msprop:Generator_ColumnPropNameInRow="tot_amt" msprop:Generator_ColumnPropNameInTable="tot_amtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ILLid" msprop:Generator_UserColumnName="ILLid" msprop:Generator_ColumnVarNameInTable="columnILLid" msprop:Generator_ColumnPropNameInRow="ILLid" msprop:Generator_ColumnPropNameInTable="ILLidColumn" type="xs:int" />
+              <xs:element name="ILLname" msprop:Generator_UserColumnName="ILLname" msprop:Generator_ColumnVarNameInTable="columnILLname" msprop:Generator_ColumnPropNameInRow="ILLname" msprop:Generator_ColumnPropNameInTable="ILLnameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

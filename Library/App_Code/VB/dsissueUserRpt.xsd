@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsissueUserRpt" targetNamespace="http://tempuri.org/dsissueUserRpt.xsd" xmlns:mstns="http://tempuri.org/dsissueUserRpt.xsd" xmlns="http://tempuri.org/dsissueUserRpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsissueUserRpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsissueUserRpt" msprop:Generator_UserDSName="dsissueUserRpt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accessionnumber" msprop:Generator_ColumnVarNameInTable="columnaccessionnumber" msprop:Generator_ColumnPropNameInRow="accessionnumber" msprop:Generator_ColumnPropNameInTable="accessionnumberColumn" msprop:Generator_UserColumnName="accessionnumber" type="xs:string" minOccurs="0" />
+              <xs:element name="callnumber" msprop:Generator_ColumnVarNameInTable="columncallnumber" msprop:Generator_ColumnPropNameInRow="callnumber" msprop:Generator_ColumnPropNameInTable="callnumberColumn" msprop:Generator_UserColumnName="callnumber" type="xs:string" minOccurs="0" />
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title" type="xs:string" minOccurs="0" />
+              <xs:element name="author" msprop:Generator_ColumnVarNameInTable="columnauthor" msprop:Generator_ColumnPropNameInRow="author" msprop:Generator_ColumnPropNameInTable="authorColumn" msprop:Generator_UserColumnName="author" type="xs:string" minOccurs="0" />
+              <xs:element name="duedate" msprop:Generator_ColumnVarNameInTable="columnduedate" msprop:Generator_ColumnPropNameInRow="duedate" msprop:Generator_ColumnPropNameInTable="duedateColumn" msprop:Generator_UserColumnName="duedate" type="xs:string" minOccurs="0" />
+              <xs:element name="Issuedate" msprop:Generator_ColumnVarNameInTable="columnIssuedate" msprop:Generator_ColumnPropNameInRow="Issuedate" msprop:Generator_ColumnPropNameInTable="IssuedateColumn" msprop:Generator_UserColumnName="Issuedate" type="xs:string" minOccurs="0" />
+              <xs:element name="cat" msprop:Generator_ColumnVarNameInTable="columncat" msprop:Generator_ColumnPropNameInRow="cat" msprop:Generator_ColumnPropNameInTable="catColumn" msprop:Generator_UserColumnName="cat" type="xs:string" minOccurs="0" />
+              <xs:element name="receivingdate" msprop:Generator_ColumnVarNameInTable="columnreceivingdate" msprop:Generator_ColumnPropNameInRow="receivingdate" msprop:Generator_ColumnPropNameInTable="receivingdateColumn" msprop:Generator_UserColumnName="receivingdate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

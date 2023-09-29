@@ -1,0 +1,13 @@
+﻿ ReturnData<  > rtd = new();
+ try
+ {
+
+   rtd.IsSuccess = true;
+   rtd.Mesg = "";
+ }catch (Exception ex)
+ {
+   rtd.IsSuccess = false;
+   rtd.Mesg = ex.Message + ";" + ex.InnerException ?? ex.InnerException.Message;
+  return rtd;
+}
+return rtd;

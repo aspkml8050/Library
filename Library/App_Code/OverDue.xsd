@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OverDue" targetNamespace="http://tempuri.org/OverDue.xsd" xmlns:mstns="http://tempuri.org/OverDue.xsd" xmlns="http://tempuri.org/OverDue.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverDue" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="OverDue" msprop:Generator_UserDSName="OverDue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userid" msprop:Generator_ColumnVarNameInTable="columnuserid" msprop:Generator_ColumnPropNameInRow="userid" msprop:Generator_ColumnPropNameInTable="useridColumn" msprop:Generator_UserColumnName="userid" type="xs:string" minOccurs="0" />
+              <xs:element name="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" msprop:Generator_UserColumnName="departmentname" type="xs:string" minOccurs="0" />
+              <xs:element name="program_name" msprop:Generator_ColumnVarNameInTable="columnprogram_name" msprop:Generator_ColumnPropNameInRow="program_name" msprop:Generator_ColumnPropNameInTable="program_nameColumn" msprop:Generator_UserColumnName="program_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Nm" msprop:Generator_ColumnVarNameInTable="columnNm" msprop:Generator_ColumnPropNameInRow="Nm" msprop:Generator_ColumnPropNameInTable="NmColumn" msprop:Generator_UserColumnName="Nm" type="xs:string" minOccurs="0" />
+              <xs:element name="TotFine" msprop:Generator_ColumnVarNameInTable="columnTotFine" msprop:Generator_ColumnPropNameInRow="TotFine" msprop:Generator_ColumnPropNameInTable="TotFineColumn" msprop:Generator_UserColumnName="TotFine" type="xs:double" minOccurs="0" />
+              <xs:element name="PaidFine" msprop:Generator_ColumnVarNameInTable="columnPaidFine" msprop:Generator_ColumnPropNameInRow="PaidFine" msprop:Generator_ColumnPropNameInTable="PaidFineColumn" msprop:Generator_UserColumnName="PaidFine" type="xs:double" minOccurs="0" />
+              <xs:element name="Bal" msprop:Generator_ColumnVarNameInTable="columnBal" msprop:Generator_ColumnPropNameInRow="Bal" msprop:Generator_ColumnPropNameInTable="BalColumn" msprop:Generator_UserColumnName="Bal" type="xs:double" minOccurs="0" />
+              <xs:element name="libraryname" msprop:Generator_ColumnVarNameInTable="columnlibraryname" msprop:Generator_ColumnPropNameInRow="libraryname" msprop:Generator_ColumnPropNameInTable="librarynameColumn" msprop:Generator_UserColumnName="libraryname" type="xs:string" minOccurs="0" />
+              <xs:element name="phoneno" msprop:Generator_ColumnVarNameInTable="columnphoneno" msprop:Generator_ColumnPropNameInRow="phoneno" msprop:Generator_ColumnPropNameInTable="phonenoColumn" msprop:Generator_UserColumnName="phoneno" type="xs:string" minOccurs="0" />
+              <xs:element name="comm" msprop:Generator_ColumnVarNameInTable="columncomm" msprop:Generator_ColumnPropNameInRow="comm" msprop:Generator_ColumnPropNameInTable="commColumn" msprop:Generator_UserColumnName="comm" type="xs:string" minOccurs="0" />
+              <xs:element name="classname" msprop:Generator_ColumnVarNameInTable="columnclassname" msprop:Generator_ColumnPropNameInRow="classname" msprop:Generator_ColumnPropNameInTable="classnameColumn" msprop:Generator_UserColumnName="classname" type="xs:string" minOccurs="0" />
+              <xs:element name="WaivAmt" msprop:Generator_ColumnVarNameInTable="columnWaivAmt" msprop:Generator_ColumnPropNameInRow="WaivAmt" msprop:Generator_ColumnPropNameInTable="WaivAmtColumn" msprop:Generator_UserColumnName="WaivAmt" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

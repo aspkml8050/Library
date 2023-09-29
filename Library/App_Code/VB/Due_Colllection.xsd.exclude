@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Due_Collection" targetNamespace="http://tempuri.org/Due_Collection.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Due_Collection.xsd" xmlns:mstns="http://tempuri.org/Due_Collection.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Due_Collection" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CircReceiveTransaction">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="userid" type="xs:string" minOccurs="0" />
+							<xs:element name="accno" type="xs:string" minOccurs="0" />
+							<xs:element name="receivingdate" type="xs:Date" minOccurs="0" />
+							<xs:element name="fineamount" type="xs:string" minOccurs="0" />
+							<xs:element name="fineCause" type="xs:string" minOccurs="0" />
+							<xs:element name="isPaid" type="xs:string" minOccurs="0" />
+							<xs:element name="rec_no" type="xs:string" minOccurs="0" />
+							<xs:element name="Dueon" type="xs:Date" minOccurs="0" />
+              <xs:element name="paidOn" type="xs:Date" minOccurs="0" />
+              <xs:element name="AMTEXP" type="xs:string" minOccurs="0" />
+              <xs:element name="BBRent" type="xs:decimal" minOccurs="0" />
+              <xs:element name="userid1" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="IssueId" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

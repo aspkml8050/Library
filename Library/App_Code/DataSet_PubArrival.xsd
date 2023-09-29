@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_PubArrival" targetNamespace="http://tempuri.org/DataSet_PubArrival.xsd" xmlns:mstns="http://tempuri.org/DataSet_PubArrival.xsd" xmlns="http://tempuri.org/DataSet_PubArrival.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_PubArrival" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_PubArrival" msprop:Generator_DataSetName="DataSet_PubArrival">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PubArrival" msprop:Generator_UserTableName="PubArrival" msprop:Generator_RowDeletedName="PubArrivalRowDeleted" msprop:Generator_TableClassName="PubArrivalDataTable" msprop:Generator_RowChangedName="PubArrivalRowChanged" msprop:Generator_RowClassName="PubArrivalRow" msprop:Generator_RowChangingName="PubArrivalRowChanging" msprop:Generator_RowEvArgName="PubArrivalRowChangeEvent" msprop:Generator_RowEvHandlerName="PubArrivalRowChangeEventHandler" msprop:Generator_TablePropName="PubArrival" msprop:Generator_TableVarName="tablePubArrival" msprop:Generator_RowDeletingName="PubArrivalRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departmentname" msprop:Generator_UserColumnName="departmentname" msprop:Generator_ColumnPropNameInRow="departmentname" msprop:Generator_ColumnVarNameInTable="columndepartmentname" msprop:Generator_ColumnPropNameInTable="departmentnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="firstname" msprop:Generator_UserColumnName="firstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unique_JN" msprop:Generator_UserColumnName="Unique_JN" msprop:Generator_ColumnPropNameInRow="Unique_JN" msprop:Generator_ColumnVarNameInTable="columnUnique_JN" msprop:Generator_ColumnPropNameInTable="Unique_JNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="journal_no" msprop:Generator_UserColumnName="journal_no" msprop:Generator_ColumnPropNameInRow="journal_no" msprop:Generator_ColumnVarNameInTable="columnjournal_no" msprop:Generator_ColumnPropNameInTable="journal_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="journal_title" msprop:Generator_UserColumnName="journal_title" msprop:Generator_ColumnPropNameInRow="journal_title" msprop:Generator_ColumnVarNameInTable="columnjournal_title" msprop:Generator_ColumnPropNameInTable="journal_titleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="doc_id" msprop:Generator_UserColumnName="doc_id" msprop:Generator_ColumnPropNameInRow="doc_id" msprop:Generator_ColumnVarNameInTable="columndoc_id" msprop:Generator_ColumnPropNameInTable="doc_idColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="exp_date" msprop:Generator_UserColumnName="exp_date" msprop:Generator_ColumnPropNameInRow="exp_date" msprop:Generator_ColumnVarNameInTable="columnexp_date" msprop:Generator_ColumnPropNameInTable="exp_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="arr_date" msprop:Generator_UserColumnName="arr_date" msprop:Generator_ColumnPropNameInRow="arr_date" msprop:Generator_ColumnVarNameInTable="columnarr_date" msprop:Generator_ColumnPropNameInTable="arr_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Arrival_Status" msprop:Generator_UserColumnName="Arrival_Status" msprop:Generator_ColumnPropNameInRow="Arrival_Status" msprop:Generator_ColumnVarNameInTable="columnArrival_Status" msprop:Generator_ColumnPropNameInTable="Arrival_StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="total_volume" msprop:Generator_UserColumnName="total_volume" msprop:Generator_ColumnPropNameInRow="total_volume" msprop:Generator_ColumnVarNameInTable="columntotal_volume" msprop:Generator_ColumnPropNameInTable="total_volumeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="issue_per_volume" msprop:Generator_UserColumnName="issue_per_volume" msprop:Generator_ColumnPropNameInRow="issue_per_volume" msprop:Generator_ColumnVarNameInTable="columnissue_per_volume" msprop:Generator_ColumnPropNameInTable="issue_per_volumeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="part_per_issue" msprop:Generator_UserColumnName="part_per_issue" msprop:Generator_ColumnPropNameInRow="part_per_issue" msprop:Generator_ColumnVarNameInTable="columnpart_per_issue" msprop:Generator_ColumnPropNameInTable="part_per_issueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="publicationdate" msprop:Generator_UserColumnName="publicationdate" msprop:Generator_ColumnPropNameInRow="publicationdate" msprop:Generator_ColumnVarNameInTable="columnpublicationdate" msprop:Generator_ColumnPropNameInTable="publicationdateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="repAccessionregister" targetNamespace="http://tempuri.org/repAccessionregister.xsd" xmlns:mstns="http://tempuri.org/repAccessionregister.xsd" xmlns="http://tempuri.org/repAccessionregister.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Default.aspx.vb" AppSettingsPropertyName="LibWiseDBConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LibWiseDBConn (Default.aspx.vb)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="accession_registerTableAdapter" GeneratorDataComponentClassName="accession_registerTableAdapter" Name="accession_register" UserDataComponentName="accession_registerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibWiseDBConn (Default.aspx.vb)" DbObjectName="Library.dbo.accession_register" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     accession_register.*
+FROM         accession_register</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="accdt" DataSetColumn="accdt" />
+              <Mapping SourceColumn="accno" DataSetColumn="accno" />
+              <Mapping SourceColumn="Autho" DataSetColumn="Autho" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="volno" DataSetColumn="volno" />
+              <Mapping SourceColumn="pubname" DataSetColumn="pubname" />
+              <Mapping SourceColumn="pubplace" DataSetColumn="pubplace" />
+              <Mapping SourceColumn="yred" DataSetColumn="yred" />
+              <Mapping SourceColumn="ordno" DataSetColumn="ordno" />
+              <Mapping SourceColumn="billno" DataSetColumn="billno" />
+              <Mapping SourceColumn="billdt" DataSetColumn="billdt" />
+              <Mapping SourceColumn="Source" DataSetColumn="Source" />
+              <Mapping SourceColumn="src" DataSetColumn="src" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="repAccessionregister" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="repAccessionregister" msprop:Generator_DataSetName="repAccessionregister">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="accession_register" msprop:Generator_UserTableName="accession_register" msprop:Generator_RowDeletedName="accession_registerRowDeleted" msprop:Generator_TableClassName="accession_registerDataTable" msprop:Generator_RowChangedName="accession_registerRowChanged" msprop:Generator_RowClassName="accession_registerRow" msprop:Generator_RowChangingName="accession_registerRowChanging" msprop:Generator_RowEvArgName="accession_registerRowChangeEvent" msprop:Generator_RowEvHandlerName="accession_registerRowChangeEventHandler" msprop:Generator_TablePropName="accession_register" msprop:Generator_TableVarName="tableaccession_register" msprop:Generator_RowDeletingName="accession_registerRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accdt" msprop:Generator_UserColumnName="accdt" msprop:Generator_ColumnPropNameInRow="accdt" msprop:Generator_ColumnVarNameInTable="columnaccdt" msprop:Generator_ColumnPropNameInTable="accdtColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="accno" msprop:Generator_UserColumnName="accno" msprop:Generator_ColumnPropNameInRow="accno" msprop:Generator_ColumnVarNameInTable="columnaccno" msprop:Generator_ColumnPropNameInTable="accnoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Autho" msprop:Generator_UserColumnName="Autho" msprop:Generator_ColumnPropNameInRow="Autho" msprop:Generator_ColumnVarNameInTable="columnAutho" msprop:Generator_ColumnPropNameInTable="AuthoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInTable="titleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="volno" msprop:Generator_UserColumnName="volno" msprop:Generator_ColumnPropNameInRow="volno" msprop:Generator_ColumnVarNameInTable="columnvolno" msprop:Generator_ColumnPropNameInTable="volnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pubname" msprop:Generator_UserColumnName="pubname" msprop:Generator_ColumnPropNameInRow="pubname" msprop:Generator_ColumnVarNameInTable="columnpubname" msprop:Generator_ColumnPropNameInTable="pubnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pubplace" msprop:Generator_UserColumnName="pubplace" msprop:Generator_ColumnPropNameInRow="pubplace" msprop:Generator_ColumnVarNameInTable="columnpubplace" msprop:Generator_ColumnPropNameInTable="pubplaceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="yred" msprop:Generator_UserColumnName="yred" msprop:Generator_ColumnPropNameInRow="yred" msprop:Generator_ColumnVarNameInTable="columnyred" msprop:Generator_ColumnPropNameInTable="yredColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ordno" msprop:Generator_UserColumnName="ordno" msprop:Generator_ColumnPropNameInRow="ordno" msprop:Generator_ColumnVarNameInTable="columnordno" msprop:Generator_ColumnPropNameInTable="ordnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="billno" msprop:Generator_UserColumnName="billno" msprop:Generator_ColumnPropNameInRow="billno" msprop:Generator_ColumnVarNameInTable="columnbillno" msprop:Generator_ColumnPropNameInTable="billnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="billdt" msprop:Generator_UserColumnName="billdt" msprop:Generator_ColumnPropNameInRow="billdt" msprop:Generator_ColumnVarNameInTable="columnbilldt" msprop:Generator_ColumnPropNameInTable="billdtColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Source" msprop:Generator_UserColumnName="Source" msprop:Generator_ColumnPropNameInRow="Source" msprop:Generator_ColumnVarNameInTable="columnSource" msprop:Generator_ColumnPropNameInTable="SourceColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="src" msprop:Generator_UserColumnName="src" msprop:Generator_ColumnPropNameInRow="src" msprop:Generator_ColumnVarNameInTable="columnsrc" msprop:Generator_ColumnPropNameInTable="srcColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_UserColumnName="price" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInTable="priceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Requirements
+        -- hidden field on this fild should have valid url
+             <input type="hidden" id="hdApiPath"  value="https://localhost:7162/api"/>
+
+
+         -- parent page should have (master page)
+         -- bootstrap 5  (or need to change this page)
+         -- jquery
+         -- jquery.datatable
+         -- BookCatalogApi.js   this file should be included in parent page(master page)
+         -- click on cell of table copies its content on clipboard
+         -- include markup in parent page
+                <div id="#dvMainLibraryApi">
+                    <div id="dvhtml">
+
+                    </div>
+                </div>
+        -- to open this markup, add this on calling page
+            <a onclick="return openMainLib();" href="#">Main Library Catalog Search</a>
+
+
+     css on parent page (change as requirement)   HeaderFooter.css
+         #dvMainLibraryApi {
+         position: absolute;
+         top: 4%;
+         border-radius: 6px;
+         border: 1px solid #565e74;
+         padding: 7px 10px;
+         background-color: #f3f4f0;
+         left: 5%;
+         height: 700px;
+         width: 900px;
+     }
+     .hideApi{
+         display:none;
+     }
+
+     #dvhtml {
+         z-index:100;
+         margin: 8px 10px;
+         height: 100%;
+         width: 100%;
+     }
+    -->
+
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+    <script>
+        $(function () {
+            let url = $('#hdApiPath').val();
+            url = url;
+
+            //this call sets check box list
+            let mods = ApiCall(url);
+            if (mods != undefined) {
+                let d = mods.data;
+                let data = d.data;
+                console.log(data);
+
+            }
+
+            $('#tab1').DataTable();
+
+        })
+    </script>
+    <style type="text/css">
+        #tabApiData > thead {
+            background-color: #5492bc;
+            color: white;
+        }
+
+            #tabApiData > thead > tr > th {
+                font-size: 12px;
+            }
+
+        #tabApiData > tbody > tr > td > span {
+            font-size: 12px;
+        }
+
+        #tabApiData {
+            font-size: 12px;
+        }
+
+        #tabApiData {
+            font-size: 12px;
+        }
+
+            #tabApiData > a {
+                font-size: 12px;
+            }
+
+        .dataTables_info {
+            font-size: 12px;
+        }
+
+        .loader {
+            border: 5px solid #1f11a9;
+            border-radius: 50%;
+            border-top: 5px solid #3498db;
+            width: 25px;
+            height: 25px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="frm">
+        <p id="dverror" style="color:red; font-weight:bold"></p>
+        <input type="hidden" id="hdApiPath" value="https://localhost:7162/api" />
+        <h5>Data From MainLibrary and related...</h5>
+        <span onclick="closit();" style="float:right;font-weight:bold; cursor:pointer; padding:6px 6px; ">X</span>
+
+        <div class="container-fluid bg-light">
+            <div class="d-flex flex-wrap border rounded p-1">
+                <div class="col-md-2">
+                    <b>Modules</b>
+                </div>
+                <div class="col-md-10">
+                    <div id="dvModules">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <b>Search Text</b>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" style="width:90%;" placeholder="...searches items" id="inpApiSearch" />
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="return getApiData()">
+                        Search
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div id="ApiSpinner"></div>
+        <div id="dvApiData" style="width:99%; max-height:98%; overflow:auto;">
+            <table id="tabApiData">
+                <thead>
+                    <tr>
+                        <th style="width:10%;">Type Name</th>
+
+
+                        <th style="width:40%;">Title </th>
+                        <th style="width:20%;"> Author</th>
+                        <th style="width:20%;"> Subject</th>
+                        <th style="width:10%;"> Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>... Type</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>... Api Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+
+</body>
+</html>

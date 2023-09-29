@@ -1,0 +1,32 @@
+﻿
+
+        .taB {
+            margin-left:auto;
+            margin-right:auto;
+            padding:8px;
+    background-color:transparent;
+    border:0;
+        }
+            .taB tbody tr {
+                line-height:17px;
+            }
+                .taB tbody tr td {
+                    padding:3px;
+                }
+.dvTitl {
+    font-weight:bold;
+    font-size:1.2em;
+    padding:4px;
+    letter-spacing:3px;
+    color:#45703f;
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:transparent;
+}
+
+.webspce {
+ padding-top:10px;
+ font-size:10px;
+ 
+}
